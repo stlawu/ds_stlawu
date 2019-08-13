@@ -1,7 +1,7 @@
 {
   "name": "cainaru/ds_stlawu",
-  "type": "drupal-custom-module",
-  "description": "Date formats used for Digital Scholarship.",
+  "type": "drupal-custom-theme",
+  "description": "Theme used for Digital Scholarship.",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
   "homepage": "https://github.com/cainaru/ds_stlawu",
