@@ -3,7 +3,6 @@
 namespace Drupal\ds_stlawu\Plugin\Setting\Components\UniversityBrand;
 
 use Drupal\bootstrap\Plugin\Setting\SettingBase;
-use Drupal\Core\Form\FormStateInterface;
 
 /**
  * The "university_brand_banner" theme setting.

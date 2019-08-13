@@ -4,8 +4,6 @@ namespace Drupal\ds_stlawu\Plugin\Preprocess;
 
 use Drupal\bootstrap\Plugin\Preprocess\PreprocessBase;
 use Drupal\bootstrap\Utility\Variables;
-use Drupal\Core\Template\Attribute;
-
 
 /**
  * Pre-processes variables for the "paragraph" theme hook.
@@ -50,4 +48,5 @@ class Paragraph extends PreprocessBase {
       }
     }
   }
+
 }
