@@ -9,14 +9,11 @@ for St. Lawrence University. This is a sub-theme of
 To get a better idea of what this theme can do, please consider installing the
 following optional modules:
 
-* [STLAWU Digital Scholarship: Date
-* [Formats](https://github.com/cainaru/ds_stlawu_date_formats) STLAWU Digital
-* [Scholarship: Text Formats](https://github.com/cainaru/ds_stlawu_text_formats)
-* [STLAWU Digital Scholarship:
-* [Nodes](https://github.com/cainaru/ds_stlawu_nodes) STLAWU Digital
-* [Scholarship: Media](https://github.com/cainaru/ds_stlawu_media) STLAWU
-* [Digital Scholarship:
-* [Paragraphs](https://github.com/cainaru/ds_stlawu_paragraphs)
+* [STLAWU Digital Scholarship: Date Formats](https://github.com/cainaru/ds_stlawu_date_formats) 
+* [STLAWU Digital Scholarship: Text Formats](https://github.com/cainaru/ds_stlawu_text_formats)
+* [STLAWU Digital Scholarship: Nodes](https://github.com/cainaru/ds_stlawu_nodes)
+* [STLAWU Digital Scholarship: Media](https://github.com/cainaru/ds_stlawu_media)
+* [STLAWU Digital Scholarship: Paragraphs](https://github.com/cainaru/ds_stlawu_paragraphs)
 
 ## Features
 
@@ -24,10 +21,11 @@ following optional modules:
 
 This sub-theme includes the following settings:
 
-* Toggleable university brand banner Toggleable university wordmark in footer
-* Toggleable and modifiable contact information in footer (Contact information
-* is set to Digital Scholarship by default, but can be changed depending on your
-* project's use case)
+* Toggleable university brand banner 
+* Toggleable university wordmark in footer
+* Toggleable and modifiable contact information in footer
+  (Contact information is set to Digital Scholarship by default,
+  but can be changed depending on your project's use case)
 
 To access these settings, go to `/admin/appearance/settings/ds_stlawu` and click
 the tab labeled Digital Scholarship: stlawu Settings
