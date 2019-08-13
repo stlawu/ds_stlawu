@@ -7,6 +7,6 @@
 @import "../bootstrap/assets/stylesheets/bootstrap/mixins";
 
 .narrative--view-mode-full > .node__content > *:not(.field--name-field-sections) {
-  max-width: $screen-sm-min;
+  max-width: 660px;
   margin: auto;
 }

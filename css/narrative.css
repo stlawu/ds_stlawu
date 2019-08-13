@@ -13,7 +13,7 @@
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
 .narrative--view-mode-full > .node__content > *:not(.field--name-field-sections) {
-  max-width: 768px;
+  max-width: 660px;
   margin: auto;
 }
 
