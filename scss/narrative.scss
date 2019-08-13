@@ -1,0 +1,12 @@
+/**
+ * Narrative
+ */
+
+@import "default-variables";
+@import '../bootstrap/assets/stylesheets/bootstrap/variables';
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+.narrative--view-mode-full > .node__content > *:not(.field--name-field-sections) {
+  max-width: $screen-sm-min;
+  margin: auto;
+}

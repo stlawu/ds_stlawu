@@ -1,0 +1,44 @@
+/**
+ * Paragraph
+ */
+
+@import "default-variables";
+@import '../bootstrap/assets/stylesheets/bootstrap/variables';
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+.paragraph--align-left {
+  float: left;
+  @media (min-width: $screen-sm-min) {
+    width: 40%;
+    margin-right: ($line-height-computed / 2);
+  }
+}
+
+.paragraph--align-right {
+  float: right;
+  @media (min-width: $screen-sm-min) {
+    width: 40%;
+    margin-left: ($line-height-computed / 2);
+  }
+}
+
+.paragraph--type--section > .field--name-field-section-content > .paragraph--type--text {
+  max-width: $screen-sm-min;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraph--type--section > .field--name-field-section-content > .paragraph--type--text > * {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraph--type--text + .paragraph--type--media, 
+.paragraph--type--media + .paragraph--type--text,
+.paragraph--type--text + .paragraph--type--content-reference,
+.paragraph--type--content-reference + .paragraph--type--text,
+.paragraph--type--text + .paragraph--type--aside,
+.paragraph--type--aside + .paragraph--type--text {
+  margin-top: ($line-height-computed / 2);
+}
