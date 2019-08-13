@@ -7,9 +7,9 @@ for St. Lawrence University. This is a sub-theme of
 ## Important Note
 
 To get a better idea of what this theme can do, please consider installing the
-following optional modules:
+following modules **using the Standard profile** :
 
-* [STLAWU Digital Scholarship: Date Formats](https://github.com/cainaru/ds_stlawu_date_formats) 
+* [STLAWU Digital Scholarship: Date Formats](https://github.com/cainaru/ds_stlawu_date_formats)
 * [STLAWU Digital Scholarship: Text Formats](https://github.com/cainaru/ds_stlawu_text_formats)
 * [STLAWU Digital Scholarship: Nodes](https://github.com/cainaru/ds_stlawu_nodes)
 * [STLAWU Digital Scholarship: Media](https://github.com/cainaru/ds_stlawu_media)
