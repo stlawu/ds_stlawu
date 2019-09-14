@@ -24,3 +24,19 @@
     padding-right: 0;
   }
 }
+
+.node--view-mode-teaser-horizontal {
+
+  .teaser__title {
+    @include teaser-title;
+  }
+  .teaser__body .node__metadata {
+    @include teaser-metadata;
+  }
+  .teaser__body .node__author {
+    font-weight: 700;
+  }
+  .teaser__body .links {
+    @include teaser-links;
+  }
+}

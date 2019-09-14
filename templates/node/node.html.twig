@@ -78,6 +78,8 @@
   ]
 %}
 {% set date = node.getCreatedTime|format_date('ds_stlawu_date_only') %}
+{% set release_date = node.field_release_date.value|date('U')|format_date('ds_stlawu_date_only') %}
+{% set has_release_date = content.field_release_date|render|striptags|trim is not empty %}
 {% block libraries %}
   {# Libraries in this block #}
 {% endblock %}
@@ -113,13 +115,19 @@
             {{ metadata }}
           </div>
         </footer>
+      {% elseif has_release_date %}
+        <footer class="node__metadata">
+          <div{{ author_attributes.addClass('node__submitted') }}>
+            {% trans %}<span class="node__date">{{ release_date }}</span>{% endtrans %}
+          </div>
+        </footer>
       {% endif %}
     {% endblock %}
 
     {% block content_wrapper %}
       <div{{ content_attributes.addClass('node__content') }}>
         {% block content %}
-          {{ content }}
+          {{ content|without('field_release_date') }}
         {% endblock %}
       </div>
     {% endblock %}

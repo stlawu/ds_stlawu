@@ -96,7 +96,7 @@
 {% endblock %}
 
 {% block content %}
-  {{ content|without('field_teaser_media') }}
+  {{ content|without('field_teaser_media', 'field_release_date') }}
 {% endblock %}
 
 {% block node_content %}

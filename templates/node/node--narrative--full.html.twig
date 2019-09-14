@@ -79,5 +79,5 @@
 {% endblock %}
 
 {% block content %}
-  {{ content|without('field_subtitle') }}
+  {{ content|without('field_subtitle', 'field_release_date') }}
 {% endblock %}
