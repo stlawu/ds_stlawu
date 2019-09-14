@@ -4682,6 +4682,11 @@ tbody.collapse.in {
   }
 }
 
+.navbar .name {
+  text-transform: uppercase;
+  font-family: Oregon,sans-serif;
+}
+
 .navbar-header:before, .navbar-header:after {
   display: table;
   content: " ";
@@ -4800,7 +4805,7 @@ tbody.collapse.in {
   float: left;
   height: 50px;
   padding: 11px 15px;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 700;
 }
