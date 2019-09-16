@@ -52,7 +52,16 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+{% set page_container = layout_type == 'layout-edge-to-edge' ? 'container-fluid' : 'container' %}
+{% set page_layout_container = theme.settings.fluid_container ? 'container-fluid' : page_container %}
 {% set university_brand_banner = theme.settings.university_brand_banner %}
+{% set page_layout_attribute = create_attribute() %}
+{%
+  set page_layout_classes = [
+    layout_type,
+    page_layout_container,
+  ]
+%}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -112,7 +121,7 @@
         {% endblock %}
       {% endif %}
 
-      <div class="{{ container }}">
+      <div{{ page_layout_attribute.addClass(page_layout_classes) }}>
       <div class="row">
 
       {# Sidebar First #}

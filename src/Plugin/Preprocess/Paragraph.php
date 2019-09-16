@@ -46,6 +46,19 @@ class Paragraph extends PreprocessBase {
         $palettename = $paragraph->field_section_palette_list->get(0)->value;
         $variables['palette'] = 'bg-' . $palettename;
       }
+      // Setup width variable for template.
+      if (!$paragraph->field_section_width->isEmpty()) {
+        switch ($paragraph->field_section_width->get(0)->value) {
+          case "1":
+            $width = "section-content-width";
+            break;
+
+          case "2":
+            $width = "section-full-width";
+            break;
+        }
+        $variables['width'] = $width;
+      }
     }
   }
 

@@ -22,16 +22,32 @@
   }
 }
 
-.paragraph--type--section > .field--name-field-section-content > .paragraph--type--text {
-  max-width: $screen-sm-min;
-  margin-left: auto;
-  margin-right: auto;
+.layout-edge-to-edge .paragraph--type--section {
+  margin-left:  floor(($grid-gutter-width / -2));
+  margin-right: ceil(($grid-gutter-width / -2));
 }
 
-.paragraph--type--section > .field--name-field-section-content > .paragraph--type--text > * {
-  max-width: 660px;
-  margin-left: auto;
+.section-content-width > .field--name-field-section-content {
   margin-right: auto;
+  margin-left: auto;
+  padding-left:  floor(($grid-gutter-width / 2));
+  padding-right: ceil(($grid-gutter-width / 2));
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+.field--name-field-section-content {
+  margin-top: $line-height-computed;
+  margin-bottom: $line-height-computed;
+}
+
+// If floated media paragraphs are longer than adjacent paragraphs,
+// do not collapse the section content field
+.field--name-field-section-content::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .paragraph--type--text + .paragraph--type--media, 

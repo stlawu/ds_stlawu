@@ -64,3 +64,20 @@ p:last-child,
     margin-top: 0;
   }
 }
+
+// Fix weirdness with inline field labels & field values.
+.field--label-inline .field--items {
+  float: none;
+  display: inline-block;
+}
+
+.field--label-inline .field--label, 
+.field--label-inline > .field--item, .field--label-inline .field--items {
+   padding-right: .25em;
+}
+
+// Change display for AddtoAny to allow it to be 
+// shifted via max-width from parents
+.addtoany_list {
+  display: block;
+}

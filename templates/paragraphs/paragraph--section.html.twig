@@ -44,9 +44,12 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     'paragraph--' ~ palette|clean_class,
+    'paragraph--' ~ width|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
     'paragraph--id--' ~ paragraph.id.value,
     palette|clean_class,
+    width|clean_class,
+    'clearfix',
   ]
 %}
 {{ attach_library('ds_stlawu/paragraph') }}
